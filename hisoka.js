@@ -332,7 +332,7 @@ if (!isCreator) return m.reply(mess.owner)
 if(text.length < 1) return m.reply(`Contoh : ${prefix + command} packname|author`)
 global.packname = text.split("|")[0]
 global.author = text.split("|")[1]
-m.reply(`Exif berhasil diubah menjadi\n\nPackname : ${global.packname}\nAuthor : ${global.author}`)
+m.reply(`Exit berhasil diubah menjadi\n\nPackname : ${global.packname}\nAuthor : ${global.author}`)
 }
 break
 
@@ -4605,6 +4605,7 @@ url: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w'
 urlButton: {
 displayText: 'Instagram',
 url: 'https://instagram.com/perwira_kusuma1'
+url: 'https://instagram.com/baaay1701'
 }
 }, {
 quickReplyButton: {

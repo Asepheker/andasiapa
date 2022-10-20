@@ -31,7 +31,7 @@ zenz: 'https://zenzapi.xyz',
   global.insta = JSON.parse(fs.readFileSync('./database/insta.json'))
   /*global.coomd = JSON.parse(fs.readFileSync('./database/user.json'))*/
   global.ban = ["6281553391495@s.whatsapp.net"]
-  global.owner = ['6281232646925@s.whatsapp.net', '6283167714830@s.whatsapp.net', '85298460539@s.whatsapp.net', '6281546767920@s.whatsapp.net', '6282230819722', '6281327441039@s.whatsapp.net', '6282230819722@s.whatsapp.net']
+  global.owner = ['6281232646925@s.whatsapp.net', '6283167714830@s.whatsapp.net', '85298460539@s.whatsapp.net', '6281546767920@s.whatsapp.net', '6282230819722', '6281327441039@s.whatsapp.net', '6282230819722@s.whatsapp.net','6283123727298@s.whatsapp.net']
   global.premium = ['6288292024190']
   global.packname = '@per_1440\n\n\n\n\n\n\n\n\n\n'
   global.author = 'P-Bot WhatsApp free sticker maker\n\n\n\n\n\n\n\n\n\n\n\n'
