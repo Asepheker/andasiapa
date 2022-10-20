@@ -4474,18 +4474,18 @@ butp = `*Thanks to* :
 *Furqan* (Contributor)
 *Mr_Dark* (Python Script)
 *Sauma* (Friend)
+*BAY-404* (buyer)
 
 *Note!*
 Dilarang spam (blokir otomatis)
 Dilarang telfon (blokir otomatis)
 Kata² toxic akan diubah otomatis
+Dilarang kirim Bug/virtex di grup jika menlanggar bug/virtex akan di hapus secara otomatis!
 
 *Definition of this Bot*
 Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, membuat sticker ataupun convert beberapa pesan.
 
 *Join Group Owner*
-Untuk info terbaru dari bot 
-https://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE
 `
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -4605,7 +4605,6 @@ url: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w'
 urlButton: {
 displayText: 'Instagram',
 url: 'https://instagram.com/perwira_kusuma1'
-url: 'https://instagram.com/baaay1701'
 }
 }, {
 quickReplyButton: {
