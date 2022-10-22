@@ -187,10 +187,10 @@ count: 0,
 lastspam: 0
 }
 let ytu = await conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
-"displayName": "Perwira Kusuma (Owner)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Perwira Kusuma (Owner);;;\nFN:Perwira Kusuma (Owner)\nitem1.TEL;waid=6282230819722:+62 822-3081-9722\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:Perwira Kusuma (Owner)\nEND:VCARD",
+"displayName": "BAY-404 (Buyer)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:Perwira Kusuma (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
 "contextInfo": {
-externalAdReply:{title: 'Per144 (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w', sourceUrl: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
+externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
 }
 }]
 }
@@ -697,7 +697,7 @@ phoneNumber: '+62 8123-3264-6925'
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/perwira_kusuma1'
+url: 'https://instagram.com/baaay1701'
 }
 }, {
 quickReplyButton: {
@@ -711,7 +711,7 @@ id: 'menu'
 }
 }]
 let txt = `Broadcast by Owner\n\n${text}`
-conn.sendButImg(i, txt, '©Perwira Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
+conn.sendButImg(i, txt, '©P-Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
 }
 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }

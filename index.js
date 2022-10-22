@@ -31,7 +31,7 @@ zenz: 'https://zenzapi.xyz',
   global.insta = JSON.parse(fs.readFileSync('./database/insta.json'))
   /*global.coomd = JSON.parse(fs.readFileSync('./database/user.json'))*/
   global.ban = ["6281553391495@s.whatsapp.net"]
-  global.owner = ['6281232646925@s.whatsapp.net', '6283167714830@s.whatsapp.net', '85298460539@s.whatsapp.net', '6281546767920@s.whatsapp.net', '6282230819722', '6281327441039@s.whatsapp.net', '6282230819722@s.whatsapp.net','6283123727298@s.whatsapp.net']
+  global.owner = ['6283123727298@s.whatsapp.net']
   global.premium = ['6288292024190']
   global.packname = '@per_1440\n\n\n\n\n\n\n\n\n\n'
   global.author = 'P-Bot WhatsApp free sticker maker\n\n\n\n\n\n\n\n\n\n\n\n'
@@ -117,10 +117,10 @@ conn.ws.on('CB:call', async (json) => {
 const callerId = json.content[0].attrs['call-creator']
 if (json.content[0].tag == 'offer') {
 let pa7rick = await conn.sendMessage(callerId, {contacts: {displayName: '1',contacts:[{
-"displayName": "Perwira Kusuma (Owner)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Perwira Kusuma (Owner);;;\nFN:Perwira Kusuma (Owner)\nitem1.TEL;waid=6282230819722:+62 822-3081-9722\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu menelfon bot hubungi owner untuk di unblock\nX-WA-BIZ-NAME:Perwira Kusuma (Owner)\nEND:VCARD",
+"displayName": "BAY-403 (Buyer)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:BAY-404 (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu menelfon bot hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
 "contextInfo": {
-  externalAdReply:{title: 'Per144 (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://www.youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w', sourceUrl: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
+  externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
 }
 }]
 }
