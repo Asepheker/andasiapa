@@ -33,7 +33,7 @@ zenz: 'https://zenzapi.xyz',
   global.ban = ["6281553391495@s.whatsapp.net"]
   global.owner = ['6283123727298@s.whatsapp.net']
   global.premium = ['6288292024190']
-  global.packname = '@per_1440\n\n\n\n\n\n\n\n\n\n'
+  global.packname = '@baaay1701\n\n\n\n\n\n\n\n\n\n'
   global.author = 'P-Bot WhatsApp free sticker maker\n\n\n\n\n\n\n\n\n\n\n\n'
   global.sessionName = 'hisoka'
   global.prefa = [',','!','.','?','#','/']
@@ -117,8 +117,8 @@ conn.ws.on('CB:call', async (json) => {
 const callerId = json.content[0].attrs['call-creator']
 if (json.content[0].tag == 'offer') {
 let pa7rick = await conn.sendMessage(callerId, {contacts: {displayName: '1',contacts:[{
-"displayName": "BAY-403 (Buyer)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:BAY-404 (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu menelfon bot hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
+"displayName": "BAY-404 (Buyer)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:BAY-404 (Buyer)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu menelfon bot hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
 "contextInfo": {
   externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
 }

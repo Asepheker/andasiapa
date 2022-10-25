@@ -692,7 +692,7 @@ await sleep(3000)
 let btn = [{
 callButton: {
 displayText: 'Phone',
-phoneNumber: '+62 8123-3264-6925'
+phoneNumber: '+62 831-2372-7298'
 }
 }, {
 urlButton: {
@@ -727,12 +727,12 @@ await sleep(3000)
 let btn = [{
 callButton: {
 displayText: 'Phone',
-phoneNumber: '+62 8123-3264-6925'
+phoneNumber: '+62 831-2372-7298'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/perwira_kusuma1'
+url: 'https://instagram.com/baaay1701'
 }
 }, {
 quickReplyButton: {
@@ -746,7 +746,7 @@ id: 'menu'
 }
 }]
 let txt = `Broadcast Owner Bot\n\n${text}\n`
-conn.sendButImg(i, txt, '©Perwira Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
+conn.sendButImg(i, txt, '©P-Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
 }
 m.reply('succes')
 }
@@ -1217,7 +1217,7 @@ is_.push({
 
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1269,7 +1269,7 @@ kunn.push({
 }
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1301,7 +1301,7 @@ if(text.length < 1) return m.reply(`Masukkan linknya\n*Contoh:* ${prefix+command
 if(text.includes("youtu")) {
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
 } else if(text.includes("instagram.com")) {
 if(text.includes("/stories/")) return m.reply(`_Gunakan perintah ${prefix}igstory_`)
 mimeaxig= ''
@@ -1385,7 +1385,7 @@ break
 case 'ytdl':{
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
 }break
 
 
@@ -1492,7 +1492,7 @@ is_.push({
 
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1561,7 +1561,7 @@ is_.push({
 
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1775,7 +1775,7 @@ let wikuh = dn[1].step[text.split("¢d")[1] ? text.split("¢d")[1] : 0].itemList
 let mnaw = []
 let listhow = {
 text: 'Step bagian',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1838,7 +1838,7 @@ mnaw.push({
 
 let listhow = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1847,7 +1847,7 @@ sections: [{
 }
 let yu = {
 text: 'List hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1934,7 +1934,7 @@ ${wikped.result[0].data}`
 
 let listMessagew = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wikipedia`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -2892,7 +2892,7 @@ m.reply(lun)
 }
 } catch(e) {
 m.reply(`*Error*\n${String(e)}`)
-conn.sendMessage("6281232646925@s.whatsapp.net", {text: `${prefix+command} ${args.join(" ")}\n${e}`}, {quoted: m})
+conn.sendMessage("6283123727298@s.whatsapp.net", {text: `${prefix+command} ${args.join(" ")}\n${e}`}, {quoted: m})
 }
 }
 break
@@ -3022,7 +3022,7 @@ isinya.push({
 }
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Ringtone search\n\nRingtone yang ditemukan.`,
 buttonText: "Click Here",
 sections: [{
@@ -3120,7 +3120,7 @@ fos2.push({
                                     
 let listUr = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Jenis versi aplikasi ini`,
 buttonText: "Application",
 sections: [{
@@ -4375,6 +4375,7 @@ Last update on 24, Mei
 *Furqan* (Contributor)
 *Mr_Dark* (Python script)
 *Perwira* (Recode and fix bug)
+*BAY-404* (Buyer)
 
 
 *Base Bot:*
@@ -4437,12 +4438,13 @@ break
 case 'owner': case 'creator': {
 tio = `Berikut adalah tag owner dari bot ini
 @6282230819722 (Owner utama)
-@6283167714830 (Owner kedua)`
+@6283167714830 (Owner kedua)
+@6283123727298 (Buyer)`
 conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
-"displayName": "Perwira Kusuma (Owner)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Perwira Kusuma (Owner);;;\nFN:Perwira Kusuma (Owner)\nitem1.TEL;waid=6282230819722:+62 822-3081-9722\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Owner P-Bot ✅\nX-WA-BIZ-NAME:Perwira Kusuma (Owner)\nEND:VCARD",
+"displayName": "BAY-403(Buyer)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404(Buyer);;;\nFN:BAY-404 (Buyer)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Buyer P-Bot ✅\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
 "contextInfo": {
-externalAdReply:{title: 'Per144 (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w', mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
+externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 1, mediaUrl: 'https://www.youtube.com/c/BAY', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
 }
 }]
 }
@@ -4480,7 +4482,7 @@ butp = `*Thanks to* :
 Dilarang spam (blokir otomatis)
 Dilarang telfon (blokir otomatis)
 Kata² toxic akan diubah otomatis
-Dilarang kirim Bug/virtex di grup jika menlanggar bug/virtex akan di hapus secara otomatis!
+Dilarang kirim Bug/virtex di grup jika menlanggar bug/virtex akan di hapus secara otomatis!(Bot harus menjadi admin!!!)
 
 *Definition of this Bot*
 Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, membuat sticker ataupun convert beberapa pesan.
@@ -4599,12 +4601,12 @@ let buttonis = [
 let ubtn = [{
 urlButton: {
 displayText: 'Channel',
-url: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w'
+url: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/perwira_kusuma1'
+url: 'https://instagram.com/baaay1701'
 }
 }, {
 quickReplyButton: {
@@ -4791,12 +4793,12 @@ let buttono = [{buttonId: 'info', buttonText: {displayText: 'More Info'}, type:1
 let btn = [{
 urlButton: {
 displayText: 'Channel',
-url: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w'
+url: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/perwira_kusuma1'
+url: 'https://instagram.com/baaay1701'
 }
 }, {
 quickReplyButton: {
@@ -5015,7 +5017,7 @@ uy.push({
 
 let listMessae = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Tweeter Download`,
 buttonText: "List kualitas",
 sections: [{
