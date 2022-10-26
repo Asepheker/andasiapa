@@ -206,7 +206,7 @@ ppuser = await conn.profilePictureUrl(quoted.sender, 'image')
 } catch {
 ppuser = './image/nothing.jpg'
 }
-conn.sendButGamc("6282230819722@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
+conn.sendButGamc("628123727298@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
 }
 this.spam[quoted.sender].count = 0
 this.spam[quoted.sender].lastspam = m.messageTimestamp * 1
@@ -238,7 +238,7 @@ Sewa bot join grup selamanya bot aktif
 Cuman 5k pembayaran via Pulsa/Dana
 Chat owner untuk melanjutkan
 
-©Perwira Bot WhatsApp`
+©P-Bot WhatsApp`
 conn.sendMessage(m.chat, {text: respons, contextInfo: {externalAdReply: {title: 'Owner Bot', body: 'Klik disini untuk menuju nomor Owner', sourceUrl: `https://wa.me/6281232646925`, mediaUrl: `https://wa.me/6281232646925`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync(`./image/pem.jpg`)}}})
 }
 break
@@ -2250,7 +2250,9 @@ Error? lapor owner
 *158*. goldentext
 *159*. carboneffect
 *160*. candytext
-*161*. glowingmetal`
+*161*. glowingmetal
+
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`
 if(!text.includes("/")) return m.reply(`Cara menggunakan
 *Contoh :* ${prefix+command} magma/Text
 
@@ -3154,7 +3156,7 @@ fos.push({
 
 let listAp = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Application Download`,
 buttonText: "Application",
 sections: [{
@@ -3207,7 +3209,7 @@ lostii.push({
 
 let listWall = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wallpaper HD`,
 buttonText: "Wallpaper",
 sections: [{
@@ -3242,7 +3244,7 @@ losti.push({
 
 let listWal = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wallpaper HD`,
 buttonText: "Wallpaper",
 sections: [{
@@ -3313,7 +3315,7 @@ datai.push({
 
 let listMess = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Instagram Story`,
 buttonText: "Story yang ditemukan",
 sections: [{
@@ -3372,7 +3374,7 @@ dataa.push({
 
 let listMess = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Instagram Story`,
 buttonText: "Story yang ditemukan",
 sections: [{
@@ -3642,7 +3644,7 @@ gui.push({
 }
 let listMesis = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Downloader Instagram`,
 buttonText: "Media Instagram",
 sections: [{
@@ -4674,7 +4676,8 @@ let annon = `*Stiker Menu*
 ≻ ${prefix}textpro
 ≻ ${prefix}template
 ≻ ${prefix}styletext
-`
+
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_`
 
 let cn = `
 *Stiker Menu* | *Convert Menu*
@@ -4889,7 +4892,7 @@ let anu = `*Group Menu*
 ________________
 
 ᴸⁱᵗᵗˡᵉ ᴮᵒᵗ ᵂʰᵃᵗˢᴬᵖᵖ
-*ᶜʳᵉᵃᵗᵉ ᵇʸ _ᴾᵉʳʷⁱʳᵃ ᴷᵘˢᵘᵐᵃ_*`
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒__*`
 /*await conn.sendButGif(m.chat, anu, `©Perwira Bot WhatsApp`, fs.readFileSync('./image/gify.mp4'), btn)*/
 /*conn.sendMessage(m.chat, 
 {document: fs.readFileSync('./image/pem.jpg'), mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -4947,7 +4950,7 @@ let anu = `*Fun Menu*
 ________________
 
 ᴸⁱᵗᵗˡᵉ ᴮᵒᵗ ᵂʰᵃᵗˢᴬᵖᵖ
-*ᶜʳᵉᵃᵗᵉ ᵇʸ _ᴾᵉʳʷⁱʳᵃ ᴷᵘˢᵘᵐᵃ_*`
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`
 /*await conn.sendButGif(m.chat, anu, `©Perwira Bot WhatsApp`, fs.readFileSync('./image/gify.mp4'), btn)*/
 /*conn.sendMessage(m.chat, 
 {document: fs.readFileSync('./image/pem.jpg'), mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -5068,7 +5071,7 @@ ufy.push({
 
 let listMessaoe = {
 text: 'Hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Facebook Download`,
 buttonText: "List kualitas",
 sections: [{
