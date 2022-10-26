@@ -3093,7 +3093,7 @@ let media = await conn.downloadAndSaveMediaMessage(quoted);
 let base666 = fs.readFileSync(media).toString('base64');
 let dun = await ocrSpace(`data:image/png;${base666}`, {apiKey: 'K87092877188957', language: 'eng'})
 let hh = dun.ParsedResults[0].ParsedText
-await conn.linkUp(m.chat, `${hh}`, "https://youtube.com/c/Per1440", fs.readFileSync('./image/nan.png'), "My YouTube", 'Subscribe owner YouTube now!')
+await conn.linkUp(m.chat, `${hh}`, "https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g", fs.readFileSync('./image/nan.png'), "My YouTube", 'Subscribe owner YouTube now!')
 await fs.unlinkSync(media)
 	}
 	break
@@ -3254,7 +3254,7 @@ sections: [{
 conn.sendMessage(m.chat, listWal, {}).then(() => {
 let typ = `https://wallhaven.cc/search?q=${encodeURI(text)}&categories=110&purity=100&sorting=relevance&order=desc&page=2`
 let btnzi = [{buttonId: `wallpaper ${typ}`, buttonText: {displayText: 'Next'}, type:1}]
-conn.sendButtonText(m.chat, btnzi, `List berikutnya`, `©Perwira Bot WhatsApp`)
+conn.sendButtonText(m.chat, btnzi, `List berikutnya`, `©P-Bot WhatsApp`)
 })
 } catch(err) {
 m.reply(String(err))
