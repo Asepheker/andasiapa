@@ -4405,7 +4405,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://www.youtube.com/c/BAY', sourceUrl: 'https://www.youtube.com/c/BAY', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
@@ -4497,7 +4497,7 @@ https://chat.whatsapp.com/DoA9SC0BX3WJ3lk6xSxAJ9
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, sourceUrl: 'https://www.youtube.com/c/BAY',mediaType: 1, mediaUrl: 'https://www.youtube.com/c/BAY', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g',mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
@@ -5302,7 +5302,6 @@ if(m.message.imageMessage.caption.length > 4500)  return conn.sendMessage(m.chat
 }
 }
 }
-
 
 if(budy.includes("Assalamualaikum")) return m.reply("Waalaikumussalam")
 if(budy.includes("p")) return m.reply("Minimal Salam Bang")
