@@ -34,10 +34,11 @@ zenz: 'https://zenzapi.xyz',
   global.owner = ['6283123727298@s.whatsapp.net']
   global.premium = ['6288292024190']
   global.packname = '@baaay1701\n\n\n\n\n\n\n\n\n\n'
-  global.author = 'P-Bot WhatsApp free sticker maker\n\n\n\n\n\n\n\n\n\n\n\n'
+  global.author = 'P-Bot WhatsApp free sticker maker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
   global.sessionName = 'hisoka'
   global.prefa = [',','!','.','?','#','/']
   global.sp = 'тнФ'
+  global.pub = true
   global.mess = {
 success: 'Success',
 admin: 'Fitur Khusus Admin Group!',
@@ -134,7 +135,7 @@ let ppuser = await conn.profilePictureUrl(callerId, 'image')
 } catch {
  let ppuser = './image/nothing.jpg'
 }
-conn.sendButGamc("6282230819722@s.whatsapp.net", [{ buttonId: `unblock23 ${callerId.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Call Block User*\nhttps://wa.me/${callerId.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser) 
+conn.sendButGamc("6283123727298@s.whatsapp.net", [{ buttonId: `unblock23 ${callerId.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Call Block User*\nhttps://wa.me/${callerId.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser) 
 
 }
 })
@@ -146,7 +147,8 @@ mek = chatUpdate.messages[0]
 if (!mek.message) return
 mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
 if (mek.key && mek.key.remoteJid === 'status@broadcast') return
-if (!conn.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
+/*if (!conn.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
+*/
 if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
 m = smsg(conn, mek/*, store*/)
 require("./hisoka")(conn, m, chatUpdate/*, store*/)

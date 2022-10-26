@@ -275,7 +275,7 @@ case 'faktaunik':
 case 'funfact': {
 	let fact = JSON.parse(fs.readFileSync('./database/fakta.json'))
 	let re = fact[crypto.randomInt(0, 321)]
-	conn.linkUp(m.chat, `${re}`, "https://www.instagram.com/per_1440", fs.readFileSync('./image/fakta.jpg'), "Fakta unik", 'Random fakta unik')
+	conn.linkUp(m.chat, `${re}`, "https://www.instagram.com/baaay1701", fs.readFileSync('./image/fakta.jpg'), "Fakta unik", 'Random fakta unik')
 	}
 	break
 
@@ -3676,7 +3676,7 @@ break
 case 'juzama': {
 let listjuzMessage = {
 text: 'Pilih JuzAma type media',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `JuzAma feature`,
 buttonText: "Click Here",
 sections: [{
@@ -3782,7 +3782,7 @@ break
 case 'iqra':{
 let listiqraMessage = {
 text: 'Silahkan pilih list iqra',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `*Iqra Feature*`,
 buttonText: "Click Here",
 sections: [{
@@ -4330,7 +4330,9 @@ ta = Tamil
 th = Thai
 tr = Turkish
 vi = Vietnamese
-cy = Welsh`
+cy = Welsh
+
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`
 m.reply(leang)
 }
 break
@@ -4403,7 +4405,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', sourceUrl: 'https://www.youtube.com/c/Per1440', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://www.youtube.com/c/BAY', sourceUrl: 'https://www.youtube.com/c/BAY', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
@@ -4490,11 +4492,12 @@ Dilarang kirim Bug/virtex di grup jika menlanggar bug/virtex akan di hapus secar
 Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, membuat sticker ataupun convert beberapa pesan.
 
 *Join Group Owner*
+https://chat.whatsapp.com/DoA9SC0BX3WJ3lk6xSxAJ9
 `
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, sourceUrl: 'https://www.youtube.com/c/Per1440',mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, sourceUrl: 'https://www.youtube.com/c/BAY',mediaType: 1, mediaUrl: 'https://www.youtube.com/c/BAY', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
@@ -4505,8 +4508,8 @@ text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: '
 
 case 'igstalk':
 case 'stalkig': {
-if(text.length < 1) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} perwira_kusuma1`)
-if(text.includes(`https://`)) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} perwira_kusuma1`)
+if(text.length < 1) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay170q`)
+if(text.includes(`https://`)) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay1701`)
 try {
 let { igstalk } = require("./lib/stalk.js")
 let prof = ''
@@ -5106,7 +5109,9 @@ loli2
 neko
 catboy
 ghoul
-hacker`)
+hacker
+
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`)
 let jeo = args.join(" ")
 let jenis = jeo.split("/")[0]
 let texts = jeo.split("/")[1]
@@ -5214,7 +5219,9 @@ loli2
 neko
 catboy
 ghoul
-hacker`)
+hacker
+
+*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`)
 }
 }
 break
@@ -5298,6 +5305,9 @@ if(m.message.imageMessage.caption.length > 4500)  return conn.sendMessage(m.chat
 
 
 if(budy.includes("Assalamualaikum")) return m.reply("Waalaikumussalam")
+if(budy.includes("p")) return m.reply("Minimal Salam Bang")
+if(budy.includes("woi")) return m.reply("Minimal Salam Bang")
+if(budy.includes("hai")) return m.reply("hai juga")
 
 if (budy.startsWith('=>')) {
 if (!isCreator) return
