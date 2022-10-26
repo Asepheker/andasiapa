@@ -5303,10 +5303,8 @@ if(m.message.imageMessage.caption.length > 4500)  return conn.sendMessage(m.chat
 }
 }
 
+
 if(budy.includes("Assalamualaikum")) return m.reply("Waalaikumussalam")
-if(budy.includes("p")) return m.reply("Minimal Salam Bang")
-if(budy.includes("woi")) return m.reply("Minimal Salam Bang")
-if(budy.includes("hai")) return m.reply("hai juga")
 
 if (budy.startsWith('=>')) {
 if (!isCreator) return
