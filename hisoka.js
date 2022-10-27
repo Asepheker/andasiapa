@@ -4408,7 +4408,6 @@ extendedTextMessage: {
 text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
-
 /*conn.sendMessage(m.chat, {text: respon}, {quoted: m})*/
 
 }
@@ -4492,7 +4491,7 @@ Dilarang kirim Bug/virtex di grup jika menlanggar bug/virtex akan di hapus secar
 Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, membuat sticker ataupun convert beberapa pesan.
 
 *Join Group Owner*
-https://chat.whatsapp.com/DoA9SC0BX3WJ3lk6xSxAJ9
+https://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97
 `
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -4547,7 +4546,7 @@ conn.linkUp(m.chat, `${datastalke}`, `https://www.instagram.com/${text}`, imgsr,
 m.reply(String(err))
 }
 }
- break
+break
 
 case 'tiktokstalk':
 case 'ttstalk': {
