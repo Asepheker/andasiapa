@@ -188,7 +188,7 @@ lastspam: 0
 }
 let ytu = await conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
 "displayName": "BAY-404 (Buyer)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:Perwira Kusuma (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:BAY-404 (Buyer)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
 "contextInfo": {
 externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
 }
@@ -234,9 +234,9 @@ switch(command) {
 case 'sewa':{
 let respons = `*Sewa Bot*
 
-Sewa bot join grup selamanya bot aktif
-Cuman 5k pembayaran via Pulsa/Dana
-Chat owner untuk melanjutkan
+-Sewa bot join grup *1bulan* bot aktif
+-Cuman 5k pembayaran via Pulsa/Dana
+-Chat owner untuk melanjutkan
 
 ©P-Bot WhatsApp`
 conn.sendMessage(m.chat, {text: respons, contextInfo: {externalAdReply: {title: 'Owner Bot', body: 'Klik disini untuk menuju nomor Owner', sourceUrl: `https://wa.me/6281232646925`, mediaUrl: `https://wa.me/6281232646925`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync(`./image/pem.jpg`)}}})
@@ -4447,7 +4447,7 @@ conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
 "displayName": "BAY-403(Buyer)",
 "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404(Buyer);;;\nFN:BAY-404 (Buyer)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Buyer P-Bot ✅\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
 "contextInfo": {
-externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 1, mediaUrl: 'https://www.youtube.com/c/BAY', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
+externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
 }
 }]
 }
@@ -4482,10 +4482,10 @@ butp = `*Thanks to* :
 *BAY-404* (buyer)
 
 *Note!*
-Dilarang spam (blokir otomatis)
-Dilarang telfon (blokir otomatis)
-Kata² toxic akan diubah otomatis
-Dilarang kirim Bug/virtex di grup jika menlanggar bug/virtex akan di hapus secara otomatis!(Bot harus menjadi admin!!!)
+-*Dilarang* spam (blokir otomatis)
+-*Dilarang* telfon (blokir otomatis)
+-*Kata² toxic akan diubah otomatis*
+-*Dilarang* kirim *Bug/virtex* di grup jika menlanggar *bug/virtex* akan di hapus secara otomatis!(*Bot harus menjadi admin*!)
 
 *Definition of this Bot*
 Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, membuat sticker ataupun convert beberapa pesan.
@@ -4654,7 +4654,7 @@ let annon = `*Stiker Menu*
 ≻ ${prefix}wikipedia 
 
 *Download Menu*
-≻ ${prefix}ttdl
+≻ ${prefix}ttdl2
 ≻ ${prefix}igdl
 ≻ ${prefix}fbdl
 ≻ ${prefix}twdl
