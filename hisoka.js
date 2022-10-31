@@ -235,7 +235,7 @@ case 'sewa':{
 let respons = `*Sewa Bot*
 
 -Sewa bot join grup *1bulan* bot aktif
--Cuman 5k pembayaran via Pulsa/Dana
+-Cuman 10k pembayaran via Pulsa/Dana
 -Chat owner untuk melanjutkan
 
 ©P-Bot WhatsApp`
@@ -859,7 +859,7 @@ yuricanvas = require("yuri-canvas");
 async function create() {
 let img = await yuricanvas.trigger('trigger.jpg');
 yuricanvas.write(img, "trigger.jpg");
-conn.sendImageAsSticker(m.chat, fs.readFileSync(`./trigger.jpg`), m, {packname: 'Sticker', author: '©Perwira Bot WhatsApp'})
+conn.sendImageAsSticker(m.chat, fs.readFileSync(`./trigger.jpg`), m, {packname: 'Sticker', author: '©P-Bot WhatsApp'})
 }
 create().then(() => {
 (async () => {
