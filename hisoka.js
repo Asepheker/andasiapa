@@ -4093,7 +4093,7 @@ m.reply("Error")
 
 case 'ttp': {
 if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} Perwira`)
-await conn.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/ttp?text=&apikey=0c9533a409${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
+await conn.sendImageAsSticker(m.chat, `https://api.xteam.xyz/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
 }
 break
 
