@@ -206,7 +206,7 @@ ppuser = await conn.profilePictureUrl(quoted.sender, 'image')
 } catch {
 ppuser = './image/nothing.jpg'
 }
-conn.sendButGamc("628123727298@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
+conn.sendButGamc("6283123727298@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
 }
 this.spam[quoted.sender].count = 0
 this.spam[quoted.sender].lastspam = m.messageTimestamp * 1
@@ -4093,7 +4093,7 @@ m.reply("Error")
 
 case 'ttp': {
 if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} Perwira`)
-await conn.sendImageAsSticker(m.chat, `https://api.xteam.xyz/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
+await conn.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/ttp?text=&apikey=0c9533a409${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
 }
 break
 
