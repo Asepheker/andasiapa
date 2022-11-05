@@ -4094,7 +4094,7 @@ m.reply("Error")
 
 case 'ttp': {
 if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} bay gan`)
-await conn.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/ttp?text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
+await conn.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'P-Bot WhatsApp\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'})
 }
 break
 
@@ -4104,7 +4104,7 @@ case 'attp':
 {
 try {
 if(text.length < 1) return m.reply(`Contoh: ${prefix+command} Halo`)
-let stik = await getBuffer(`https://zenzapis.xyz/creator/attp?text=${encodeURI(text)}`)
+let stik = await getBuffer(`https://zenzapis.xyz/creator/attp?file&text=${encodeURI(text)}`)
 conn.sendMessage(m.chat, {sticker: stik, mimetype: 'image/webp'}, {quoted: m})
 } catch(e) {
 m.reply(util.format(e))
