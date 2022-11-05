@@ -19,7 +19,7 @@ zenz: 'https://zenzapi.xyz',
   
   // Apikey Website Api
   global.APIKeys = {
-'https://zenzapi.xyz': 'Your Key',
+'https://zenzapi.xyz': 'Y0c9533a409',
   }
   
   // Other
@@ -32,7 +32,7 @@ zenz: 'https://zenzapi.xyz',
   /*global.coomd = JSON.parse(fs.readFileSync('./database/user.json'))*/
   global.ban = ["6281553391495@s.whatsapp.net"]
   global.owner = ['6283123727298@s.whatsapp.net']
-  global.premium = ['6288292024190']
+  global.premium = ['6283123727298']
   global.packname = '@baaay1701\n\n\n\n\n\n\n\n\n\n'
   global.author = 'P-Bot WhatsApp free sticker maker\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
   global.sessionName = 'hisoka'

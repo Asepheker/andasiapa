@@ -2983,6 +2983,7 @@ m.reply(String(e))
 }
 break
 
+
 case 'bugon': {
 if(!isCreator) return
 bug.status = true
@@ -3265,7 +3266,7 @@ m.reply(String(err))
 
 
 case 'beli': {
-jio = `Harga script 15k
+jio = `Harga script 50k
 Pembayaran via pulsa
 No encrypt, No Api
 
@@ -4092,8 +4093,8 @@ m.reply("Error")
 
 
 case 'ttp': {
-if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} Perwira`)
-await conn.sendImageAsSticker(m.chat, `https://api.xteam.xyz/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
+if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} bay gan`)
+await conn.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/ttp?text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
 }
 break
 
@@ -4103,7 +4104,7 @@ case 'attp':
 {
 try {
 if(text.length < 1) return m.reply(`Contoh: ${prefix+command} Halo`)
-let stik = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(text)}`)
+let stik = await getBuffer(`https://zenzapis.xyz/creator/attp?text=${encodeURI(text)}`)
 conn.sendMessage(m.chat, {sticker: stik, mimetype: 'image/webp'}, {quoted: m})
 } catch(e) {
 m.reply(util.format(e))
@@ -4507,7 +4508,7 @@ text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: '
 
 case 'igstalk':
 case 'stalkig': {
-if(text.length < 1) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay170q`)
+if(text.length < 1) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay1701`)
 if(text.includes(`https://`)) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay1701`)
 try {
 let { igstalk } = require("./lib/stalk.js")
@@ -4689,7 +4690,7 @@ let cn = `
 ≻ ${prefix}triggered|≻ ${prefix}tomp4
 `
 if(require("@adiwajshing/baileys").getDevice(m.id) === "android") {
-let templateButtones = [ {index: 1, callButton: {displayText: 'Phone', phoneNumber: '6282230819722'}}, {index: 2, urlButton: {displayText: 'WhatsApp Group', url: 'https://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE'}}, {index: 3, quickReplyButton: {displayText: 'Rules', id: 'rules'}},{index: 5, quickReplyButton: {displayText: 'Owner', id: 'owner'}},{index: 5, quickReplyButton: {displayText: 'Network', id: 'ping'}}]
+let templateButtones = [ {index: 1, callButton: {displayText: 'Phone', phoneNumber: '6283123727298'}}, {index: 2, urlButton: {displayText: 'WhatsApp Group', url: 'https://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97'}}, {index: 3, quickReplyButton: {displayText: 'Rules', id: 'rules'}},{index: 5, quickReplyButton: {displayText: 'Owner', id: 'owner'}},{index: 5, quickReplyButton: {displayText: 'Network', id: 'ping'}}]
 let templateMessages = {viewOnceMessage :{message : { templateMessage : {hydratedTemplate: { hydratedContentText: annon,
 hydratedFooterText: "©P-Bot 2022 Android\nThis is Simple Bot WhatsApp", hydratedButtons: templateButtones}}}}}
 conn.relayMessage(m.chat, templateMessages, {})
@@ -4713,6 +4714,7 @@ break
 case 'menfess': {
 try {
 let ret = `Fitur untuk mengirim pesan kepada nomor tujuan
+note: GUNAKAN FIRUR INI DENGAN BIJAK!!!
 
 *Cara menggunakan:*
 ${prefix}menfess 62xxxx/inisial/pesan
@@ -5282,7 +5284,7 @@ if(isBotAdmins) {
 if(!/image|video|sticker|audio/.test((m.msg).mimetype || '')) {
 if(budy.length < 1) return conn.sendMessage(m.chat, {delete:m.key})
 if(budy.length > 4500) return conn.sendMessage(m.chat, {delete:m.key})
-if(/kontol|kontl|kntl|kotol|jmbt|jembut|memek|mmk|memk|mmek|bewok|bokep|bkep|anjing|ajeg|bagst|bangst|babi|bangsat|tolol|jancok|jnck|jancog|jancg|cok +| +cok|asu +| +asu|ngentot|ngent|ngntt|bajingan|bajing|hentai|bokep|blowjob|menstruasi|bugil|gay|xxx|xnxx|sodom|kondom|tetek|asw|ngewe|pelacur|pelcr|goblok|gblk|kanjut|anjg|idiot|bego|dick|pussy|telanjang|pusy|pixhentai|pornhub|porn|sexy|porno|pornografi|telanjangg|mendesah|montok|simontok/i.test(budy.toLowerCase())) return conn.sendMessage(m.chat, {delete:m.key})
+if(/kontol|kontl|kirik|anjg|ajg|yatim|bangsat|bagsat|ngen|ngewe|ytim|piatu|kt0l|kntl|kotol|jmbt|jembut|memek|mmk|memk|mmek|bewok|bokep|bkep|anjing|ajeg|bagst|bangst|babi|bangsat|tolol|jancok|jnck|jancog|jancg|cok +| +cok|asu +| +asu|ngentot|ngent|ngntt|bajingan|bajing|hentai|bokep|blowjob|menstruasi|bugil|gay|xxx|xnxx|sodom|kondom|tetek|asw|ngewe|pelacur|pelcr|goblok|gblk|kanjut|anjg|idiot|bego|dick|pussy|telanjang|pusy|pixhentai|pornhub|porn|sexy|porno|pornografi|telanjangg|mendesah|montok|simontok/i.test(budy.toLowerCase())) return conn.sendMessage(m.chat, {delete:m.key})
 if(Object.keys(m.message).includes("extendedTextMessage")) {
 if(Object.keys(m.message.extendedTextMessage).includes("title")) {
 if(m.message.extendedTextMessage.text.length > 4000) return conn.sendMessage(m.chat, {delete:m.key})
