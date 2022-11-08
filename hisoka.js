@@ -219,13 +219,13 @@ count: 0,
 lastspam: 0
 }
 }
-/*
-let mymem = await conn.groupMetadata("120363021644121771@g.us").catch(e => {})
+
+let mymem = await conn.groupMetadata("120363020818895548@g.us").catch(e => {})
 let mygrup = await mymem.participants.map((k) => k.id).concat(global.friend)
 if (!mygrup.includes(quoted.sender)) {
-return m.reply("Join to use this bot in private chat\nhttps://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE")
+return m.reply("Join to use this bot in private chat\nhttps://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97")
 }
-*/
+
 }
 
 
