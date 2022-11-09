@@ -134,7 +134,7 @@ timezone: "Asia/Jakarta"
 })
 
 
-if(!m.isGroup) {
+/*if(!m.isGroup) {
 if(!isCreator && !m.sender.startsWith("62") && !m.sender.startsWith("60")) {
 if (new Date() * 1 - kickadd.time > 20000) {
 kickadd.time = new Date() * 1
@@ -146,7 +146,7 @@ await sleep(20000 - new Date() * 1 - kickadd.time)
 await conn.updateBlockStatus(quoted.sender, 'block')
 return kickadd.time = new Date() * 1
 }
-}
+}*/
 
 //Anti spam
 
@@ -180,7 +180,7 @@ if (quoted.sender in this.spam) {
 this.spam[quoted.sender].count++
 if (m.messageTimestamp * 1 - this.spam[quoted.sender].lastspam > 10) {
 if (this.spam[quoted.sender].count > 2) {
-db.data.users[m.sender].banned = true
+//db.data.users[m.sender].banned = true
 this.spam[m.sender] = {
 jid: m.sender,
 count: 0,
