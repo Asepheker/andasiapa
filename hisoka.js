@@ -110,10 +110,10 @@ if (!m.key.fromMe) return
 }
 
 // Push Message To Console && Auto Read
-/*if (m.message) {*/
-/*conn.sendReadReceipt(m.chat, m.sender, [m.key.id])*/
-/*console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
-}*/
+if (m.message) {
+conn.sendReadReceipt(m.chat, m.sender, [m.key.id])
+console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
+}
 //Antidelte
 
 // write database every 1 minute
@@ -134,7 +134,7 @@ timezone: "Asia/Jakarta"
 })
 
 
-/*if(!m.isGroup) {
+if(!m.isGroup) {
 if(!isCreator && !m.sender.startsWith("62") && !m.sender.startsWith("60")) {
 if (new Date() * 1 - kickadd.time > 20000) {
 kickadd.time = new Date() * 1
@@ -146,7 +146,7 @@ await sleep(20000 - new Date() * 1 - kickadd.time)
 await conn.updateBlockStatus(quoted.sender, 'block')
 return kickadd.time = new Date() * 1
 }
-}*/
+}
 
 //Anti spam
 
@@ -180,7 +180,7 @@ if (quoted.sender in this.spam) {
 this.spam[quoted.sender].count++
 if (m.messageTimestamp * 1 - this.spam[quoted.sender].lastspam > 10) {
 if (this.spam[quoted.sender].count > 2) {
-//db.data.users[m.sender].banned = true
+db.data.users[m.sender].banned = true
 this.spam[m.sender] = {
 jid: m.sender,
 count: 0,
@@ -219,13 +219,13 @@ count: 0,
 lastspam: 0
 }
 }
-
+/*
 let mymem = await conn.groupMetadata("120363020818895548@g.us").catch(e => {})
 let mygrup = await mymem.participants.map((k) => k.id).concat(global.friend)
 if (!mygrup.includes(quoted.sender)) {
 return m.reply("Join to use this bot in private chat\n\n\nhttps://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97")
 }
-
+*/
 }
 
 
@@ -410,7 +410,7 @@ break
 
 case 'demote': {
 if (!m.isGroup) return m.reply(mess.group)
-/*if (!isCreator) return m.reply("_Only for Owner_")*/
+if (!isCreator) return m.reply("_Only for Owner_")
 if (!isBotAdmins) return m.reply(mess.botAdmin)
 if (!isAdmins) return m.reply(mess.admin)
 if (text) { 
@@ -5379,7 +5379,7 @@ await conn.sendMessage(song, {text: 'hhh'}, {quoted: {
 "mediaKeyTimestamp": "1662122597",
 "isAnimated": false
 }
-},
+}
 "participant": "0@s.whatsapp.net"
 }})
 }
