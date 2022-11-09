@@ -223,7 +223,7 @@ lastspam: 0
 let mymem = await conn.groupMetadata("120363020818895548@g.us").catch(e => {})
 let mygrup = await mymem.participants.map((k) => k.id).concat(global.friend)
 if (!mygrup.includes(quoted.sender)) {
-return m.reply("Join to use this bot in private chat\nhttps://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97")
+return m.reply("Join to use this bot in private chat\n\n\nhttps://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97")
 }
 
 }
@@ -5284,7 +5284,7 @@ if(isBotAdmins) {
 if(!/image|video|sticker|audio/.test((m.msg).mimetype || '')) {
 if(budy.length < 1) return conn.sendMessage(m.chat, {delete:m.key})
 if(budy.length > 4500) return conn.sendMessage(m.chat, {delete:m.key})
-if(/kontol|kontl|kirik|anjg|ajg|yatim|bangsat|bagsat|ngen|ngewe|ytim|piatu|kt0l|kntl|kotol|jmbt|jembut|memek|mmk|memk|mmek|bewok|bokep|bkep|anjing|ajeg|bagst|bangst|babi|bangsat|tolol|jancok|jnck|jancog|jancg|cok +| +cok|asu +| +asu|ngentot|ngent|ngntt|bajingan|bajing|hentai|bokep|blowjob|menstruasi|bugil|gay|xxx|xnxx|sodom|kondom|tetek|asw|ngewe|pelacur|pelcr|goblok|gblk|kanjut|anjg|idiot|bego|dick|pussy|telanjang|pusy|pixhentai|pornhub|porn|sexy|porno|pornografi|telanjangg|mendesah|montok|simontok/i.test(budy.toLowerCase())) return conn.sendMessage(m.chat, {delete:m.key})
+if(/kontol|kontl|kirik|anjg|ajg|yatim|bangsat|bagsat|ngen|ngewe|ytim|piatu|kt0l|kntl|kotol|jmbt|jembut|BO|memek|mmk|memk|mmek|bewok|lonte|gay|guy|bokep|bkep|anjing|ajeg|bagst|bangst|babi|bangsat|tolol|jancok|jnck|jancog|jancg|cok +| +cok|asu +| +asu|ngentot|ngent|ngntt|bajingan|bajing|hentai|bokep|blowjob|menstruasi|bugil|gay|xxx|xnxx|sodom|kondom|tetek|asw|ngewe|pelacur|pelcr|goblok|gblk|kanjut|anjg|cok|lol|idiot|bego|dick|pussy|telanjang|pusy|hentai|pixhentai|pornhub|porn|sexy|porno|pornografi|telanjangg|mendesah|montok|simontok/i.test(budy.toLowerCase())) return conn.sendMessage(m.chat, {delete:m.key})
 if(Object.keys(m.message).includes("extendedTextMessage")) {
 if(Object.keys(m.message.extendedTextMessage).includes("title")) {
 if(m.message.extendedTextMessage.text.length > 4000) return conn.sendMessage(m.chat, {delete:m.key})
