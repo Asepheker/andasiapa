@@ -110,10 +110,10 @@ if (!m.key.fromMe) return
 }
 
 // Push Message To Console && Auto Read
-if (m.message) {
-conn.sendReadReceipt(m.chat, m.sender, [m.key.id])
-console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
-}
+/*if (m.message) {*/
+/*conn.sendReadReceipt(m.chat, m.sender, [m.key.id])*/
+/*console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
+}*/
 //Antidelte
 
 // write database every 1 minute
