@@ -110,7 +110,7 @@ if (!m.key.fromMe) return
 }
 
 // Push Message To Console && Auto Read
-/*if (m.message) {*/ 
+/*if (m.message) {*/
 /*conn.sendReadReceipt(m.chat, m.sender, [m.key.id])*/
 /*console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
 }*/
@@ -187,8 +187,8 @@ count: 0,
 lastspam: 0
 }
 let ytu = await conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
-"displayName": "BAY-404 (Buyer)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Buyer);;;\nFN:BAY-404 (Buyer)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
+"displayName": "BAY-404 (Owner)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Owner);;;\nFN:BAY (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Owner)\nEND:VCARD",
 "contextInfo": {
 externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
 }
@@ -220,10 +220,10 @@ lastspam: 0
 }
 }
 /*
-let mymem = await conn.groupMetadata("120363020818895548@g.us").catch(e => {})
+let mymem = await conn.groupMetadata("120363021644121771@g.us").catch(e => {})
 let mygrup = await mymem.participants.map((k) => k.id).concat(global.friend)
 if (!mygrup.includes(quoted.sender)) {
-return m.reply("Join to use this bot in private chat\n\n\nhttps://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97")
+return m.reply("Join to use this bot in private chat\nhttps://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE")
 }
 */
 }
@@ -234,12 +234,12 @@ switch(command) {
 case 'sewa':{
 let respons = `*Sewa Bot*
 
--Sewa bot join grup *1bulan* bot aktif
--Cuman 10k pembayaran via Pulsa/Dana
--Chat owner untuk melanjutkan
+Sewa bot join grup 1bulan bot aktif
+Cuman 10k pembayaran via Pulsa/Dana
+Chat owner untuk melanjutkan
 
-©P-Bot WhatsApp`
-conn.sendMessage(m.chat, {text: respons, contextInfo: {externalAdReply: {title: 'Owner Bot', body: 'Klik disini untuk menuju nomor Owner', sourceUrl: `https://wa.me/6281232646925`, mediaUrl: `https://wa.me/6281232646925`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync(`./image/pem.jpg`)}}})
+©Perwira Bot WhatsApp`
+conn.sendMessage(m.chat, {text: respons, contextInfo: {externalAdReply: {title: 'Owner Bot', body: 'Klik disini untuk menuju nomor Owner', sourceUrl: `https://wa.me/6283123727297`, mediaUrl: `https://wa.me/6283123727298`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync(`./image/pem.jpg`)}}})
 }
 break
 
@@ -275,7 +275,7 @@ case 'faktaunik':
 case 'funfact': {
 	let fact = JSON.parse(fs.readFileSync('./database/fakta.json'))
 	let re = fact[crypto.randomInt(0, 321)]
-	conn.linkUp(m.chat, `${re}`, "https://www.instagram.com/baaay1701", fs.readFileSync('./image/fakta.jpg'), "Fakta unik", 'Random fakta unik')
+	conn.linkUp(m.chat, `${re}`, "https://www.instagram.com/baaay1701?r=nametag", fs.readFileSync('./image/fakta.jpg'), "Fakta unik", 'Random fakta unik')
 	}
 	break
 
@@ -332,7 +332,7 @@ if (!isCreator) return m.reply(mess.owner)
 if(text.length < 1) return m.reply(`Contoh : ${prefix + command} packname|author`)
 global.packname = text.split("|")[0]
 global.author = text.split("|")[1]
-m.reply(`Exit berhasil diubah menjadi\n\nPackname : ${global.packname}\nAuthor : ${global.author}`)
+m.reply(`Exif berhasil diubah menjadi\n\nPackname : ${global.packname}\nAuthor : ${global.author}`)
 }
 break
 
@@ -697,7 +697,7 @@ phoneNumber: '+62 831-2372-7298'
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/baaay1701'
+url: 'https://www.instagram.com/baaay1701?r=nametag'
 }
 }, {
 quickReplyButton: {
@@ -732,7 +732,7 @@ phoneNumber: '+62 831-2372-7298'
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/baaay1701'
+url: 'https://www.instagram.com/baaay1701?r=nametag'
 }
 }, {
 quickReplyButton: {
@@ -859,7 +859,7 @@ yuricanvas = require("yuri-canvas");
 async function create() {
 let img = await yuricanvas.trigger('trigger.jpg');
 yuricanvas.write(img, "trigger.jpg");
-conn.sendImageAsSticker(m.chat, fs.readFileSync(`./trigger.jpg`), m, {packname: 'Sticker', author: '©P-Bot WhatsApp'})
+conn.sendImageAsSticker(m.chat, fs.readFileSync(`./trigger.jpg`), m, {packname: 'Sticker', author: '©Perwira Bot WhatsApp'})
 }
 create().then(() => {
 (async () => {
@@ -1301,7 +1301,7 @@ if(text.length < 1) return m.reply(`Masukkan linknya\n*Contoh:* ${prefix+command
 if(text.includes("youtu")) {
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
 } else if(text.includes("instagram.com")) {
 if(text.includes("/stories/")) return m.reply(`_Gunakan perintah ${prefix}igstory_`)
 mimeaxig= ''
@@ -1385,7 +1385,7 @@ break
 case 'ytdl':{
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
 }break
 
 
@@ -1847,7 +1847,7 @@ sections: [{
 }
 let yu = {
 text: 'List hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -2250,9 +2250,7 @@ Error? lapor owner
 *158*. goldentext
 *159*. carboneffect
 *160*. candytext
-*161*. glowingmetal
-
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`
+*161*. glowingmetal`
 if(!text.includes("/")) return m.reply(`Cara menggunakan
 *Contoh :* ${prefix+command} magma/Text
 
@@ -2983,7 +2981,6 @@ m.reply(String(e))
 }
 break
 
-
 case 'bugon': {
 if(!isCreator) return
 bug.status = true
@@ -3094,7 +3091,7 @@ let media = await conn.downloadAndSaveMediaMessage(quoted);
 let base666 = fs.readFileSync(media).toString('base64');
 let dun = await ocrSpace(`data:image/png;${base666}`, {apiKey: 'K87092877188957', language: 'eng'})
 let hh = dun.ParsedResults[0].ParsedText
-await conn.linkUp(m.chat, `${hh}`, "https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g", fs.readFileSync('./image/nan.png'), "My YouTube", 'Subscribe owner YouTube now!')
+await conn.linkUp(m.chat, `${hh}`, "https://youtube.com/c/Per1440", fs.readFileSync('./image/nan.png'), "My YouTube", 'Subscribe owner YouTube now!')
 await fs.unlinkSync(media)
 	}
 	break
@@ -3783,7 +3780,7 @@ break
 case 'iqra':{
 let listiqraMessage = {
 text: 'Silahkan pilih list iqra',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `*Iqra Feature*`,
 buttonText: "Click Here",
 sections: [{
@@ -4093,8 +4090,8 @@ m.reply("Error")
 
 
 case 'ttp': {
-if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} bay gan`)
-await conn.sendImageAsSticker(m.chat, `https://zenzapis.xyz/creator/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'P-Bot WhatsApp\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'})
+if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} bayganz`)
+await conn.sendImageAsSticker(m.chat, `https://api.xteam.xyz/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
 }
 break
 
@@ -4104,7 +4101,7 @@ case 'attp':
 {
 try {
 if(text.length < 1) return m.reply(`Contoh: ${prefix+command} Halo`)
-let stik = await getBuffer(`https://zenzapis.xyz/creator/attp?file&text=${encodeURI(text)}`)
+let stik = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(text)}`)
 conn.sendMessage(m.chat, {sticker: stik, mimetype: 'image/webp'}, {quoted: m})
 } catch(e) {
 m.reply(util.format(e))
@@ -4331,9 +4328,7 @@ ta = Tamil
 th = Thai
 tr = Turkish
 vi = Vietnamese
-cy = Welsh
-
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`
+cy = Welsh`
 m.reply(leang)
 }
 break
@@ -4406,9 +4401,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
+
 /*conn.sendMessage(m.chat, {text: respon}, {quoted: m})*/
 
 }
@@ -4418,7 +4414,7 @@ break
 
 case 'nulis':{
 try {
-if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} Perwira`)
+if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} bayganz`)
 let nulli = await getBuffer(`https://hadi-api.herokuapp.com/api/canvas/nulis?text=${encodeURI(q)}`)
 await conn.sendMessage(m.chat, {image: nulli, mimetype: 'image/jpeg', caption: 'Done'}, {quoted: m}).catch((e) => m.reply(String(e)))
 } catch(e) {
@@ -4429,7 +4425,7 @@ m.reply(`${String(e)}`)
 
 case 'tahta':
 try {
-if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} Perwira`)
+if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} BAY`)
 let gimgt = await getBuffer(`https://api.zeks.me/api/hartatahta?apikey=PerwiraGans&text=${q}`)
 await conn.sendMessage(m.chat, {image: gimgt, mimetype: 'image/jpeg', caption: "_Sudah jadi kak_"}, {quoted: m}).catch((e) => m.reply(`*Error*\n${String(e)}`))
 } catch(e) {
@@ -4445,8 +4441,8 @@ tio = `Berikut adalah tag owner dari bot ini
 @6283167714830 (Owner kedua)
 @6283123727298 (Buyer)`
 conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
-"displayName": "BAY-403(Buyer)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404(Buyer);;;\nFN:BAY-404 (Buyer)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Buyer P-Bot ✅\nX-WA-BIZ-NAME:BAY-404 (Buyer)\nEND:VCARD",
+"displayName": "BAY-404(Owner)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404(Owner);;;\nFN:BAY-404 (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Owner P-Bot ✅\nX-WA-BIZ-NAME:BAY-404 (Owner)\nEND:VCARD",
 "contextInfo": {
 externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
 }
@@ -4479,19 +4475,18 @@ butp = `*Thanks to* :
 *Arul (CAF)* (Kontributor)
 *Furqan* (Contributor)
 *Mr_Dark* (Python Script)
-*Sauma* (Friend)
-*BAY-404* (buyer)
+*BAY-404* (Buyer)
 
 *Note!*
--*Dilarang* spam (blokir otomatis)
--*Dilarang* telfon (blokir otomatis)
--*Kata² toxic akan diubah otomatis*
--*Dilarang* kirim *Bug/virtex* di grup jika menlanggar *bug/virtex* akan di hapus secara otomatis!(*Bot harus menjadi admin*!)
+Dilarang spam (blokir otomatis)
+Dilarang telfon (blokir otomatis)
+Kata² toxic akan diubah otomatis
 
 *Definition of this Bot*
 Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, membuat sticker ataupun convert beberapa pesan.
 
 *Join Group Owner*
+Untuk info terbaru dari bot 
 https://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97
 `
 
@@ -4547,11 +4542,11 @@ conn.linkUp(m.chat, `${datastalke}`, `https://www.instagram.com/${text}`, imgsr,
 m.reply(String(err))
 }
 }
-break
+ break
 
 case 'tiktokstalk':
 case 'ttstalk': {
-if(text.length < 1) return m.reply(`Masukkan username tiktok\n*Contoh:* ${prefix+command} per1440`)
+if(text.length < 1) return m.reply(`Masukkan username tiktok\n*Contoh:* ${prefix+command} kiyomasa_50`)
 let { stalk } = require('./lib/ttstalk')
 let kuun = await stalk(text)
 
@@ -4655,7 +4650,7 @@ let annon = `*Stiker Menu*
 ≻ ${prefix}wikipedia 
 
 *Download Menu*
-≻ ${prefix}ttdl2
+≻ ${prefix}ttdl
 ≻ ${prefix}igdl
 ≻ ${prefix}fbdl
 ≻ ${prefix}twdl
@@ -4679,8 +4674,7 @@ let annon = `*Stiker Menu*
 ≻ ${prefix}textpro
 ≻ ${prefix}template
 ≻ ${prefix}styletext
-
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_`
+`
 
 let cn = `
 *Stiker Menu* | *Convert Menu*
@@ -4714,7 +4708,7 @@ break
 case 'menfess': {
 try {
 let ret = `Fitur untuk mengirim pesan kepada nomor tujuan
-note: GUNAKAN FIRUR INI DENGAN BIJAK!!!
+note: *JANGAN DI SALAH GUNAKAN*!!!
 
 *Cara menggunakan:*
 ${prefix}menfess 62xxxx/inisial/pesan
@@ -4896,7 +4890,7 @@ let anu = `*Group Menu*
 ________________
 
 ᴸⁱᵗᵗˡᵉ ᴮᵒᵗ ᵂʰᵃᵗˢᴬᵖᵖ
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒__*`
+*_*`
 /*await conn.sendButGif(m.chat, anu, `©Perwira Bot WhatsApp`, fs.readFileSync('./image/gify.mp4'), btn)*/
 /*conn.sendMessage(m.chat, 
 {document: fs.readFileSync('./image/pem.jpg'), mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -4954,7 +4948,7 @@ let anu = `*Fun Menu*
 ________________
 
 ᴸⁱᵗᵗˡᵉ ᴮᵒᵗ ᵂʰᵃᵗˢᴬᵖᵖ
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`
+*_*`
 /*await conn.sendButGif(m.chat, anu, `©Perwira Bot WhatsApp`, fs.readFileSync('./image/gify.mp4'), btn)*/
 /*conn.sendMessage(m.chat, 
 {document: fs.readFileSync('./image/pem.jpg'), mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -5110,9 +5104,7 @@ loli2
 neko
 catboy
 ghoul
-hacker
-
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`)
+hacker`)
 let jeo = args.join(" ")
 let jenis = jeo.split("/")[0]
 let texts = jeo.split("/")[1]
@@ -5155,8 +5147,8 @@ await fs.unlinkSync(pathh)
 }
 haha()
 } else if(jenis === 'catboy') {
-if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
-if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
+if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
+if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
 haha = async () => {
 var knights = require('./lib/knights-canvas')
 var image = await new knights.Gfx3()
@@ -5170,8 +5162,8 @@ await fs.unlinkSync(pathh)
 }
 haha()
 } else if(jenis === 'neko') {
-if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
-if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
+if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
+if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
 haha = async () => {
 var knights = require('./lib/knights-canvas')
 var image = await new knights.Gfx4()
@@ -5220,9 +5212,7 @@ loli2
 neko
 catboy
 ghoul
-hacker
-
-*𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 _𝐁𝐀𝐘-𝟒𝟎𝟒_*`)
+hacker`)
 }
 }
 break
@@ -5284,7 +5274,7 @@ if(isBotAdmins) {
 if(!/image|video|sticker|audio/.test((m.msg).mimetype || '')) {
 if(budy.length < 1) return conn.sendMessage(m.chat, {delete:m.key})
 if(budy.length > 4500) return conn.sendMessage(m.chat, {delete:m.key})
-if(/kontol|kontl|kirik|anjg|ajg|yatim|bangsat|bagsat|ngen|ngewe|ytim|piatu|kt0l|kntl|kotol|jmbt|jembut|BO|memek|mmk|memk|mmek|bewok|lonte|gay|guy|bokep|bkep|anjing|ajeg|bagst|bangst|babi|bangsat|tolol|jancok|jnck|jancog|jancg|cok +| +cok|asu +| +asu|ngentot|ngent|ngntt|bajingan|bajing|hentai|bokep|blowjob|menstruasi|bugil|gay|xxx|xnxx|sodom|kondom|tetek|asw|ngewe|pelacur|pelcr|goblok|gblk|kanjut|anjg|cok|lol|idiot|bego|dick|pussy|telanjang|pusy|hentai|pixhentai|pornhub|porn|sexy|porno|pornografi|telanjangg|mendesah|montok|simontok/i.test(budy.toLowerCase())) return conn.sendMessage(m.chat, {delete:m.key})
+if(/kontol|kontl|kntl|kotol|jmbt|jembut|memek|mmk|memk|mmek|bewok|bokep|bkep|anjing|ajeg|bagst|bangst|babi|bangsat|tolol|jancok|jnck|jancog|jancg|cok +| +cok|asu +| +asu|ngentot|ngent|ngntt|bajingan|bajing|hentai|bokep|blowjob|menstruasi|bugil|gay|xxx|xnxx|sodom|kondom|tetek|asw|ngewe|pelacur|pelcr|goblok|gblk|kanjut|anjg|idiot|bego|dick|pussy|telanjang|pusy|pixhentai|pornhub|porn|sexy|porno|pornografi|telanjangg|mendesah|montok|simontok/i.test(budy.toLowerCase())) return conn.sendMessage(m.chat, {delete:m.key})
 if(Object.keys(m.message).includes("extendedTextMessage")) {
 if(Object.keys(m.message.extendedTextMessage).includes("title")) {
 if(m.message.extendedTextMessage.text.length > 4000) return conn.sendMessage(m.chat, {delete:m.key})
@@ -5379,7 +5369,7 @@ await conn.sendMessage(song, {text: 'hhh'}, {quoted: {
 "mediaKeyTimestamp": "1662122597",
 "isAnimated": false
 }
-}
+},
 "participant": "0@s.whatsapp.net"
 }})
 }
