@@ -408,7 +408,7 @@ break
 
 
 case 'demote': {
-if (!m.isGroup) return m.reply(mess.group)
+/*if (!m.isGroup) return m.reply(mess.group)*/
 if (!isCreator) return m.reply("_Only for Owner_")
 if (!isBotAdmins) return m.reply(mess.botAdmin)
 if (!isAdmins) return m.reply(mess.admin)
