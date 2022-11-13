@@ -1715,12 +1715,12 @@ m.reply(String(e))
 case 'call':{
 if(!isCreator) return m.reply("Khusus Owner")
 if(text.includes("@")) {
-exec("python call.py "+text.split("@62")[1], (err, stdout) => {
+exec("python3 call.py "+text.split("@62")[1], (err, stdout) => {
 if(err) return m.reply(err)
 if (stdout) return m.reply(stdout)
 })
 } else if(text.startsWith("8")) {
-exec("python call.py "+text, (err, stdout) => {
+exec("python3 call.py "+text, (err, stdout) => {
 if(err) return m.reply(err)
 if (stdout) return m.reply(stdout)
 })
@@ -5294,7 +5294,7 @@ if(m.message.imageMessage.caption.length > 4500)  return conn.sendMessage(m.chat
 }
 
 
-if(budy.includes("Assalamualaikum")) return m.reply("Waalaikumussalam")
+if(budy.includes("Assalamualaikum","p")) return m.reply("Waalaikumussalam","apa agama lu?")
 
 if (budy.startsWith('=>')) {
 if (!isCreator) return
