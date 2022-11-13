@@ -1711,7 +1711,6 @@ m.reply(String(e))
 }break
 
 
-
 case 'call':{
 if(!isCreator) return m.reply("Khusus Owner")
 if(text.includes("@")) {
@@ -1729,7 +1728,6 @@ m.reply(`Masukkan nomor contoh\n${prefix+command} 852+++++++++\natau\nTag nomor 
 }
 }
 break
-
 
 
 

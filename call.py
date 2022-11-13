@@ -1,7 +1,7 @@
 import os,sys,requests,json
 from requests import post
 sesid = sys.argv[1]
-dark = requests.post(f"https://id.jagreward.com/member/verify-mobile/{sesid}/", data={"method": "CALL", "countryCode": "id",}, headers={"PHPSESSID": "n88pmtvvsdpf25898a9jeqbggc", "User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-A107F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36",}).text
+dark = requests.post(f"https://id.jagreward.com/member/verify-mobile-2/{sesid}/", data={"method": "CALL", "countryCode": "id",}, headers={"PHPSESSID": "l6emhlv9jm6i0eskarkuupfl84", "User-Agent": "Mozilla/5.0 (Linux; Android 9; vivo 1902) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",}).text
 darkstat = dark.split('"result":')[1];
 darkstatus = darkstat.split(',')[0];
 bjer = dark.split('"message":"')[1];
