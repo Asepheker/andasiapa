@@ -653,6 +653,7 @@ break
 
 case 'delete': case 'del': {
 if (!isAdmins) return m.reply(mess.admin)
+if (!isCreator) return m.reply(mess.owner)
 if (!m.quoted) return m.reply('false')
 let { chat, fromMe, id, isBaileys } = m.quoted
 if (!isBaileys) return m.reply('Pesan tersebut bukan dikirim oleh bot!')
