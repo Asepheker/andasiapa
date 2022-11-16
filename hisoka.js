@@ -652,7 +652,7 @@ break
 
 
 case 'delete': case 'del': {
-if (!isAdmins) return m.reply(mess.admin)
+/*if (!isAdmins) return m.reply(mess.admin)*/
 if (!isCreator) return m.reply(mess.owner)
 if (!m.quoted) return m.reply('false')
 let { chat, fromMe, id, isBaileys } = m.quoted
@@ -1301,7 +1301,7 @@ if(text.length < 1) return m.reply(`Masukkan linknya\n*Contoh:* ${prefix+command
 if(text.includes("youtu")) {
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
 } else if(text.includes("instagram.com")) {
 if(text.includes("/stories/")) return m.reply(`_Gunakan perintah ${prefix}igstory_`)
 mimeaxig= ''
@@ -1385,7 +1385,7 @@ break
 case 'ytdl':{
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
 }break
 
 
@@ -1845,7 +1845,7 @@ sections: [{
 }
 let yu = {
 text: 'List hasil penelusuran',
-footer: `©Perwira Bot WhatsApp`,
+footer: `©P-Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1971,6 +1971,7 @@ break
 
 case 'pindl':
 case 'pinterest': {
+if(m.isGroup) return m.reply("Tidak bisa digunakan didalam grup")
 if(text.length < 1) return m.reply(`Masukkan yang ingin dicari\n*Contoh :* ${prefix+command} Naruto atau masukkan Link`)
 if(text.includes("https://pin")) {
 let dimti = ' '
@@ -3186,7 +3187,7 @@ break
 
 
 case 'wallpaper': {
-
+if(m.isGroup) return m.reply("Tidak bisa digunakan didalam grup")
 let { wallpaperhd } = require('./lib/wallpaper.js')
 let enm = await text.split("order=desc&page=")[1] ? text.split("order=desc&page=")[1]: 0
 if(text.includes("//wallhaven.cc/search")) {
