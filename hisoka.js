@@ -754,7 +754,7 @@ break
 
 
 case 'totag': {
-if (!m.isGroup) return m.reply(mess.group)
+if (!m.isGroup && !m.isCreator) return m.reply(mess.group)
 if (!isBotAdmins) return m.reply(mess.botAdmin)
 if (!isAdmins) return m.reply(mess.admin)
 if (quoted.mtype == 'conversation') {
