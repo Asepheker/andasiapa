@@ -1731,24 +1731,6 @@ m.reply(`Masukkan nomor contoh\n${prefix+command} 852+++++++++\natau\nTag nomor 
 break
 
 
-case 'sms':{
-if(!isCreator) return m.reply("Khusus Owner")
-if(text.includes("@")) {
-exec("python3 mpl.py "+text.split("@62")[1], (err, stdout) => {
-if(err) return m.reply(err)
-if (stdout) return m.reply(stdout)
-})
-} else if(text.startsWith("8")) {
-exec("python3 mpl.py "+text, (err, stdout) => {
-if(err) return m.reply(err)                                                                                                                  if (stdout) return m.reply(stdout)
-})
-} else {
-m.reply(`Masukkan nomor contoh\n${prefix+command} 852+++++++++\natau\nTag nomor demgan cara\n${prefix+command} tag nomor`)
-}
-}
-break
-
-
 
 case 'wikihow': {
 if (!isCreator && m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
