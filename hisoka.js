@@ -4620,59 +4620,55 @@ id: 'info'
 }
 }]
 
-let annon = `*Stiker Menu*
-≻ ${prefix}ttp
-≻ ${prefix}attp
-≻ ${prefix}sticker
-≻ ${prefix}triggered
-≻ ${prefix}removebg
-
-*Convert Menu*
-≻ ${prefix}tts
-≻ ${prefix}tourl
-≻ ${prefix}togif
-≻ ${prefix}totext
-≻ ${prefix}toimg
-≻ ${prefix}tomp3
-≻ ${prefix}tomp4
-≻ ${prefix}translate 
-
-*Search Menu*
-≻ ${prefix}play
-≻ ${prefix}lyrics 
-≻ ${prefix}ttstalk
-≻ ${prefix}igstalk
-≻ ${prefix}igstory
-≻ ${prefix}ringtone
-≻ ${prefix}ytsearch
-≻ ${prefix}wikihow
-≻ ${prefix}wikipedia 
-
-*Download Menu*
-≻ ${prefix}ttdl
-≻ ${prefix}igdl
-≻ ${prefix}fbdl
-≻ ${prefix}twdl
-> ${prefix}ttmp3
-≻ ${prefix}ytmp3
-≻ ${prefix}ytmp4
-≻ ${prefix}igmulti
-> ${prefix}pinterest
-≻ ${prefix}mediafire
-
-*Message Menu*
-≻ ${prefix}menfess
-
-*Random Menu*
-> ${prefix}image
-≻ ${prefix}funfact
-≻ ${prefix}wallpaper
-
-*Maker Menu*
-≻ ${prefix}anim
-≻ ${prefix}textpro
-≻ ${prefix}template
-≻ ${prefix}styletext
+let annon = `╭━━━━━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙
+│]────❏ *Stiker Menu* ❏────[
+│≻ .ttp
+│≻ .attp
+│≻ .sticker
+│≻ .triggered
+│≻ .removebg
+│]────❏ *Convert Menu* ❏────[
+│≻ .tts
+│≻ .tourl
+│≻ .togif
+│≻ .totext
+│≻ .toimg
+│≻ .tomp3
+│≻ .tomp4
+│≻ .translate 
+│]────❏*Search Menu* ❏────[
+│≻ .play
+│≻ .lyrics 
+│≻ .ttstalk
+│≻ .igstalk
+│≻ .igstory
+│≻ .ringtone
+│≻ .ytsearch
+│≻ .wikihow
+│≻ .wikipedia 
+│]────❏ *Download Menu* ❏────[
+│≻ .ttdl
+│≻ .igdl
+│≻ .fbdl
+│≻ .twdl
+│> .ttmp3
+│≻ .ytmp3
+│≻ .ytmp4
+│≻ .igmulti
+│> .pinterest
+│≻ .mediafire
+│]────❏ *Message Menu* ❏────[
+│≻ .menfess
+│]────❏ *Randon Menu* ❏────[
+│> .image
+│≻ .funfact
+│≻ .wallpaper
+│]────❏ *Marker Menu* ❏────[
+│≻ .anim
+│≻ .textpro
+│≻ .template
+│≻ .styletext
+╰━━━━━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙
 `
 
 let cn = `
