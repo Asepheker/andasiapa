@@ -188,7 +188,7 @@ lastspam: 0
 }
 let ytu = await conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
 "displayName": "BAY-404 (Owner)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Owner);;;\nFN:BAY (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Owner)\nEND:VCARD",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404 (Owner);;;\nFN:BAY-404 (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Kamu melakukan spam hubungi owner untuk di unblock\nX-WA-BIZ-NAME:BAY-404 (Owner)\nEND:VCARD",
 "contextInfo": {
 externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 0, renderLargerThumbnail: true, showAdAttribution: true}
 }
@@ -206,7 +206,7 @@ ppuser = await conn.profilePictureUrl(quoted.sender, 'image')
 } catch {
 ppuser = './image/nothing.jpg'
 }
-conn.sendButGamc("6283123727298@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
+conn.sendButGamc("6282230819722@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
 }
 this.spam[quoted.sender].count = 0
 this.spam[quoted.sender].lastspam = m.messageTimestamp * 1
@@ -219,11 +219,10 @@ count: 0,
 lastspam: 0
 }
 }
-
-let mymem = await conn.groupMetadata("120363020818895548@g.us").catch(e => {})
+let mymem = await conn.groupMetadata("120363021644121771@g.us").catch(e => {})
 let mygrup = await mymem.participants.map((k) => k.id).concat(global.friend)
 if (!mygrup.includes(quoted.sender)) {
-return m.reply("Join to use this bot in private chat\n https://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97")
+return m.reply("Join to use this bot in private chat\nhttps://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE")
 }
 }
 
@@ -233,12 +232,12 @@ switch(command) {
 case 'sewa':{
 let respons = `*Sewa Bot*
 
-Sewa bot join grup 1bulan bot aktif
-Cuman 10k pembayaran via Pulsa/Dana
+Sewa bot join grup selamanya bot aktif
+Cuman 5k pembayaran via Pulsa/Dana
 Chat owner untuk melanjutkan
 
 ©Perwira Bot WhatsApp`
-conn.sendMessage(m.chat, {text: respons, contextInfo: {externalAdReply: {title: 'Owner Bot', body: 'Klik disini untuk menuju nomor Owner', sourceUrl: `https://wa.me/6283123727297`, mediaUrl: `https://wa.me/6283123727298`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync(`./image/pem.jpg`)}}})
+conn.sendMessage(m.chat, {text: respons, contextInfo: {externalAdReply: {title: 'Owner Bot', body: 'Klik disini untuk menuju nomor Owner', sourceUrl: `https://wa.me/6281232646925`, mediaUrl: `https://wa.me/6281232646925`, mediaType: 1, renderLargerThumbnail: true, thumbnail: fs.readFileSync(`./image/pem.jpg`)}}})
 }
 break
 
@@ -274,7 +273,7 @@ case 'faktaunik':
 case 'funfact': {
 	let fact = JSON.parse(fs.readFileSync('./database/fakta.json'))
 	let re = fact[crypto.randomInt(0, 321)]
-	conn.linkUp(m.chat, `${re}`, "https://www.instagram.com/baaay1701?r=nametag", fs.readFileSync('./image/fakta.jpg'), "Fakta unik", 'Random fakta unik')
+	conn.linkUp(m.chat, `${re}`, "https://www.instagram.com/per_1440", fs.readFileSync('./image/fakta.jpg'), "Fakta unik", 'Random fakta unik')
 	}
 	break
 
@@ -408,8 +407,8 @@ break
 
 
 case 'demote': {
-/*if (!m.isGroup) return m.reply(mess.group)*/
-if (!isCreator) return m.reply("_Only for Owner_")
+if (!m.isGroup) return m.reply(mess.group)
+/*if (!isCreator) return m.reply("_Only for Owner_")*/
 if (!isBotAdmins) return m.reply(mess.botAdmin)
 if (!isAdmins) return m.reply(mess.admin)
 if (text) { 
@@ -652,8 +651,7 @@ break
 
 
 case 'delete': case 'del': {
-/*if (!isAdmins) return m.reply(mess.admin)*/
-if (!isCreator) return m.reply(mess.owner)
+if (!isAdmins) return m.reply(mess.admin)
 if (!m.quoted) return m.reply('false')
 let { chat, fromMe, id, isBaileys } = m.quoted
 if (!isBaileys) return m.reply('Pesan tersebut bukan dikirim oleh bot!')
@@ -692,12 +690,12 @@ await sleep(3000)
 let btn = [{
 callButton: {
 displayText: 'Phone',
-phoneNumber: '+62 831-2372-7298'
+phoneNumber: '+62 8123-3264-6925'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://www.instagram.com/baaay1701?r=nametag'
+url: 'https://instagram.com/perwira_kusuma1'
 }
 }, {
 quickReplyButton: {
@@ -711,7 +709,7 @@ id: 'menu'
 }
 }]
 let txt = `Broadcast by Owner\n\n${text}`
-conn.sendButImg(i, txt, '©P-Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
+conn.sendButImg(i, txt, '©Perwira Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
 }
 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
@@ -727,12 +725,12 @@ await sleep(3000)
 let btn = [{
 callButton: {
 displayText: 'Phone',
-phoneNumber: '+62 831-2372-7298'
+phoneNumber: '+62 8123-3264-6925'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://www.instagram.com/baaay1701?r=nametag'
+url: 'https://instagram.com/perwira_kusuma1'
 }
 }, {
 quickReplyButton: {
@@ -746,7 +744,7 @@ id: 'menu'
 }
 }]
 let txt = `Broadcast Owner Bot\n\n${text}\n`
-conn.sendButImg(i, txt, '©P-Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
+conn.sendButImg(i, txt, '©Perwira Bot WhatsApp', fs.readFileSync('./image/pem.jpg'), btn)
 }
 m.reply('succes')
 }
@@ -754,7 +752,7 @@ break
 
 
 case 'totag': {
-if (!m.isGroup && !m.isCreator) return m.reply(mess.group)
+if (!m.isGroup) return m.reply(mess.group)
 if (!isBotAdmins) return m.reply(mess.botAdmin)
 if (!isAdmins) return m.reply(mess.admin)
 if (quoted.mtype == 'conversation') {
@@ -1217,7 +1215,7 @@ is_.push({
 
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1269,7 +1267,7 @@ kunn.push({
 }
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1301,7 +1299,7 @@ if(text.length < 1) return m.reply(`Masukkan linknya\n*Contoh:* ${prefix+command
 if(text.includes("youtu")) {
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
 } else if(text.includes("instagram.com")) {
 if(text.includes("/stories/")) return m.reply(`_Gunakan perintah ${prefix}igstory_`)
 mimeaxig= ''
@@ -1385,7 +1383,7 @@ break
 case 'ytdl':{
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
 }break
 
 
@@ -1492,7 +1490,7 @@ is_.push({
 
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1561,7 +1559,7 @@ is_.push({
 
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Yt-Search`,
 buttonText: "Video yang ditemukan",
 sections: [{
@@ -1712,15 +1710,16 @@ m.reply(String(e))
 }break
 
 
+
 case 'call':{
 if(!isCreator) return m.reply("Khusus Owner")
 if(text.includes("@")) {
-exec("python3 call.py "+text.split("@62")[1], (err, stdout) => {
+exec("python call.py "+text.split("@62")[1], (err, stdout) => {
 if(err) return m.reply(err)
 if (stdout) return m.reply(stdout)
-}).
+})
 } else if(text.startsWith("8")) {
-exec("python3 call.py "+text, (err, stdout) => {
+exec("python call.py "+text, (err, stdout) => {
 if(err) return m.reply(err)
 if (stdout) return m.reply(stdout)
 })
@@ -1729,6 +1728,7 @@ m.reply(`Masukkan nomor contoh\n${prefix+command} 852+++++++++\natau\nTag nomor 
 }
 }
 break
+
 
 
 
@@ -1773,7 +1773,7 @@ let wikuh = dn[1].step[text.split("¢d")[1] ? text.split("¢d")[1] : 0].itemList
 let mnaw = []
 let listhow = {
 text: 'Step bagian',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1836,7 +1836,7 @@ mnaw.push({
 
 let listhow = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1845,7 +1845,7 @@ sections: [{
 }
 let yu = {
 text: 'List hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wikihow`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1932,7 +1932,7 @@ ${wikped.result[0].data}`
 
 let listMessagew = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wikipedia`,
 buttonText: "Catatan yang ditemukan",
 sections: [{
@@ -1971,7 +1971,6 @@ break
 
 case 'pindl':
 case 'pinterest': {
-if(m.isGroup) return m.reply("Tidak bisa digunakan didalam grup")
 if(text.length < 1) return m.reply(`Masukkan yang ingin dicari\n*Contoh :* ${prefix+command} Naruto atau masukkan Link`)
 if(text.includes("https://pin")) {
 let dimti = ' '
@@ -2891,7 +2890,7 @@ m.reply(lun)
 }
 } catch(e) {
 m.reply(`*Error*\n${String(e)}`)
-conn.sendMessage("6283123727298@s.whatsapp.net", {text: `${prefix+command} ${args.join(" ")}\n${e}`}, {quoted: m})
+conn.sendMessage("6281232646925@s.whatsapp.net", {text: `${prefix+command} ${args.join(" ")}\n${e}`}, {quoted: m})
 }
 }
 break
@@ -3021,7 +3020,7 @@ isinya.push({
 }
 let listMessage = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Ringtone search\n\nRingtone yang ditemukan.`,
 buttonText: "Click Here",
 sections: [{
@@ -3119,7 +3118,7 @@ fos2.push({
                                     
 let listUr = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Jenis versi aplikasi ini`,
 buttonText: "Application",
 sections: [{
@@ -3153,7 +3152,7 @@ fos.push({
 
 let listAp = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Application Download`,
 buttonText: "Application",
 sections: [{
@@ -3187,7 +3186,7 @@ break
 
 
 case 'wallpaper': {
-if(m.isGroup) return m.reply("Tidak bisa digunakan didalam grup")
+
 let { wallpaperhd } = require('./lib/wallpaper.js')
 let enm = await text.split("order=desc&page=")[1] ? text.split("order=desc&page=")[1]: 0
 if(text.includes("//wallhaven.cc/search")) {
@@ -3206,7 +3205,7 @@ lostii.push({
 
 let listWall = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wallpaper HD`,
 buttonText: "Wallpaper",
 sections: [{
@@ -3241,7 +3240,7 @@ losti.push({
 
 let listWal = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Wallpaper HD`,
 buttonText: "Wallpaper",
 sections: [{
@@ -3251,7 +3250,7 @@ sections: [{
 conn.sendMessage(m.chat, listWal, {}).then(() => {
 let typ = `https://wallhaven.cc/search?q=${encodeURI(text)}&categories=110&purity=100&sorting=relevance&order=desc&page=2`
 let btnzi = [{buttonId: `wallpaper ${typ}`, buttonText: {displayText: 'Next'}, type:1}]
-conn.sendButtonText(m.chat, btnzi, `List berikutnya`, `©P-Bot WhatsApp`)
+conn.sendButtonText(m.chat, btnzi, `List berikutnya`, `©Perwira Bot WhatsApp`)
 })
 } catch(err) {
 m.reply(String(err))
@@ -3262,7 +3261,7 @@ m.reply(String(err))
 
 
 case 'beli': {
-jio = `Harga script 50k
+jio = `Harga script 15k
 Pembayaran via pulsa
 No encrypt, No Api
 
@@ -3312,7 +3311,7 @@ datai.push({
 
 let listMess = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Instagram Story`,
 buttonText: "Story yang ditemukan",
 sections: [{
@@ -3371,7 +3370,7 @@ dataa.push({
 
 let listMess = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Instagram Story`,
 buttonText: "Story yang ditemukan",
 sections: [{
@@ -3641,7 +3640,7 @@ gui.push({
 }
 let listMesis = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Downloader Instagram`,
 buttonText: "Media Instagram",
 sections: [{
@@ -3673,7 +3672,7 @@ break
 case 'juzama': {
 let listjuzMessage = {
 text: 'Pilih JuzAma type media',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `JuzAma feature`,
 buttonText: "Click Here",
 sections: [{
@@ -4089,7 +4088,7 @@ m.reply("Error")
 
 
 case 'ttp': {
-if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} bayganz`)
+if(text.length < 1) return m.reply(`Cara menggunakan\n*Contoh :* ${prefix+command} Perwira`)
 await conn.sendImageAsSticker(m.chat, `https://api.xteam.xyz/ttp?file&text=${encodeURI(text)}`, m, {packname: 'Sticker', author: 'Perwira Bot WhatsApp'})
 }
 break
@@ -4374,7 +4373,6 @@ Last update on 24, Mei
 *Furqan* (Contributor)
 *Mr_Dark* (Python script)
 *Perwira* (Recode and fix bug)
-*BAY-404* (Buyer)
 
 
 *Base Bot:*
@@ -4400,7 +4398,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: respon, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', sourceUrl: 'https://www.youtube.com/c/Per1440', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
@@ -4413,7 +4411,7 @@ break
 
 case 'nulis':{
 try {
-if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} bayganz`)
+if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} Perwira`)
 let nulli = await getBuffer(`https://hadi-api.herokuapp.com/api/canvas/nulis?text=${encodeURI(q)}`)
 await conn.sendMessage(m.chat, {image: nulli, mimetype: 'image/jpeg', caption: 'Done'}, {quoted: m}).catch((e) => m.reply(String(e)))
 } catch(e) {
@@ -4424,7 +4422,7 @@ m.reply(`${String(e)}`)
 
 case 'tahta':
 try {
-if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} BAY`)
+if(text.length < 1) return m.reply(`Masukkan teksnya\nContoh: ${prefix}${command} Perwira`)
 let gimgt = await getBuffer(`https://api.zeks.me/api/hartatahta?apikey=PerwiraGans&text=${q}`)
 await conn.sendMessage(m.chat, {image: gimgt, mimetype: 'image/jpeg', caption: "_Sudah jadi kak_"}, {quoted: m}).catch((e) => m.reply(`*Error*\n${String(e)}`))
 } catch(e) {
@@ -4437,13 +4435,12 @@ break
 case 'owner': case 'creator': {
 tio = `Berikut adalah tag owner dari bot ini
 @6282230819722 (Owner utama)
-@6283167714830 (Owner kedua)
-@6283123727298 (Buyer)`
+@6283167714830 (Owner kedua)`
 conn.sendMessage(m.chat, {contacts: {displayName: '1',contacts:[{
-"displayName": "BAY-404(Owner)",
-"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;BAY-404(Owner);;;\nFN:BAY-404 (Owner)\nitem1.TEL;waid=6283123727298:+62 831-2372-7298\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Owner P-Bot ✅\nX-WA-BIZ-NAME:BAY-404 (Owner)\nEND:VCARD",
+"displayName": "Perwira Kusuma (Owner)",
+"vcard": "BEGIN:VCARD\nVERSION:3.0\nN:;Perwira Kusuma (Owner);;;\nFN:Perwira Kusuma (Owner)\nitem1.TEL;waid=6282230819722:+62 822-3081-9722\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:Owner P-Bot ✅\nX-WA-BIZ-NAME:Perwira Kusuma (Owner)\nEND:VCARD",
 "contextInfo": {
-externalAdReply:{title: 'BAY (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
+externalAdReply:{title: 'Per144 (Subscribe Now)', body: 'Support me on YouTube - Click here',sourceUrl: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w', mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', renderLargerThumbnail: true, showAdAttribution: true, thumbnail: fs.readFileSync('./image/phot.jpg')}
 }
 }]
 }
@@ -4474,7 +4471,7 @@ butp = `*Thanks to* :
 *Arul (CAF)* (Kontributor)
 *Furqan* (Contributor)
 *Mr_Dark* (Python Script)
-*BAY-404* (Buyer)
+*Sauma* (Friend)
 
 *Note!*
 Dilarang spam (blokir otomatis)
@@ -4486,12 +4483,12 @@ Ini adalah simpel bot di WhatsApp yang dapat mempermudah untuk mendownload, memb
 
 *Join Group Owner*
 Untuk info terbaru dari bot 
-https://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97
+https://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE
 `
 
 var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 extendedTextMessage: {
-text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, sourceUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g',mediaType: 1, mediaUrl: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g', thumbnail: fs.readFileSync('./image/phot.jpg')}}
+text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: 'Subscribe untuk support owner', renderLargerThumbnail: true, sourceUrl: 'https://www.youtube.com/c/Per1440',mediaType: 1, mediaUrl: 'https://www.youtube.com/c/Per1440', thumbnail: fs.readFileSync('./image/phot.jpg')}}
 },
 }), {});conn.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
@@ -4502,8 +4499,8 @@ text: butp, contextInfo: {externalAdReply: {title: 'My Channel YouTube', body: '
 
 case 'igstalk':
 case 'stalkig': {
-if(text.length < 1) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay1701`)
-if(text.includes(`https://`)) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} baaay1701`)
+if(text.length < 1) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} perwira_kusuma1`)
+if(text.includes(`https://`)) return m.reply(`Masukkan username instagram yang tepat\n*Contoh :* ${prefix+command} perwira_kusuma1`)
 try {
 let { igstalk } = require("./lib/stalk.js")
 let prof = ''
@@ -4545,7 +4542,7 @@ m.reply(String(err))
 
 case 'tiktokstalk':
 case 'ttstalk': {
-if(text.length < 1) return m.reply(`Masukkan username tiktok\n*Contoh:* ${prefix+command} kiyomasa_50`)
+if(text.length < 1) return m.reply(`Masukkan username tiktok\n*Contoh:* ${prefix+command} per1440`)
 let { stalk } = require('./lib/ttstalk')
 let kuun = await stalk(text)
 
@@ -4600,12 +4597,12 @@ let buttonis = [
 let ubtn = [{
 urlButton: {
 displayText: 'Channel',
-url: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g'
+url: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/baaay1701'
+url: 'https://instagram.com/perwira_kusuma1'
 }
 }, {
 quickReplyButton: {
@@ -4620,55 +4617,59 @@ id: 'info'
 }
 }]
 
-let annon = `╭━━━━━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙
-│]────❏ *Stiker Menu* ❏────[
-│≻ .ttp
-│≻ .attp
-│≻ .sticker
-│≻ .triggered
-│≻ .removebg
-│]────❏ *Convert Menu* ❏────[
-│≻ .tts
-│≻ .tourl
-│≻ .togif
-│≻ .totext
-│≻ .toimg
-│≻ .tomp3
-│≻ .tomp4
-│≻ .translate 
-│]────❏*Search Menu* ❏────[
-│≻ .play
-│≻ .lyrics 
-│≻ .ttstalk
-│≻ .igstalk
-│≻ .igstory
-│≻ .ringtone
-│≻ .ytsearch
-│≻ .wikihow
-│≻ .wikipedia 
-│]───❏ *Download Menu* ❏───[
-│≻ .ttdl
-│≻ .igdl
-│≻ .fbdl
-│≻ .twdl
-│> .ttmp3
-│≻ .ytmp3
-│≻ .ytmp4
-│≻ .igmulti
-│> .pinterest
-│≻ .mediafire
-│]───❏ *Message Menu* ❏───[
-│≻ .menfess
-│]────❏ *Randon Menu* ❏────[
-│> .image
-│≻ .funfact
-│≻ .wallpaper
-│]────❏ *Marker Menu* ❏────[
-│≻ .anim
-│≻ .textpro
-│≻ .template
-│≻ .styletext
-╰━━━━━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙
+let annon = `*Stiker Menu*
+≻ ${prefix}ttp
+≻ ${prefix}attp
+≻ ${prefix}sticker
+≻ ${prefix}triggered
+≻ ${prefix}removebg
+
+*Convert Menu*
+≻ ${prefix}tts
+≻ ${prefix}tourl
+≻ ${prefix}togif
+≻ ${prefix}totext
+≻ ${prefix}toimg
+≻ ${prefix}tomp3
+≻ ${prefix}tomp4
+≻ ${prefix}translate 
+
+*Search Menu*
+≻ ${prefix}play
+≻ ${prefix}lyrics 
+≻ ${prefix}ttstalk
+≻ ${prefix}igstalk
+≻ ${prefix}igstory
+≻ ${prefix}ringtone
+≻ ${prefix}ytsearch
+≻ ${prefix}wikihow
+≻ ${prefix}wikipedia 
+
+*Download Menu*
+≻ ${prefix}ttdl
+≻ ${prefix}igdl
+≻ ${prefix}fbdl
+≻ ${prefix}twdl
+> ${prefix}ttmp3
+≻ ${prefix}ytmp3
+≻ ${prefix}ytmp4
+≻ ${prefix}igmulti
+> ${prefix}pinterest
+≻ ${prefix}mediafire
+
+*Message Menu*
+≻ ${prefix}menfess
+
+*Random Menu*
+> ${prefix}image
+≻ ${prefix}funfact
+≻ ${prefix}wallpaper
+
+*Maker Menu*
+≻ ${prefix}anim
+≻ ${prefix}textpro
+≻ ${prefix}template
+≻ ${prefix}styletext
 `
 
 let cn = `
@@ -4679,7 +4680,7 @@ let cn = `
 ≻ ${prefix}triggered|≻ ${prefix}tomp4
 `
 if(require("@adiwajshing/baileys").getDevice(m.id) === "android") {
-let templateButtones = [ {index: 1, callButton: {displayText: 'Phone', phoneNumber: '6283123727298'}}, {index: 2, urlButton: {displayText: 'WhatsApp Group', url: 'https://chat.whatsapp.com/H8rep5i9heJHH3sR7wBA97'}}, {index: 3, quickReplyButton: {displayText: 'Rules', id: 'rules'}},{index: 5, quickReplyButton: {displayText: 'Owner', id: 'owner'}},{index: 5, quickReplyButton: {displayText: 'Network', id: 'ping'}}]
+let templateButtones = [ {index: 1, callButton: {displayText: 'Phone', phoneNumber: '6282230819722'}}, {index: 2, urlButton: {displayText: 'WhatsApp Group', url: 'https://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE'}}, {index: 3, quickReplyButton: {displayText: 'Rules', id: 'rules'}},{index: 5, quickReplyButton: {displayText: 'Owner', id: 'owner'}},{index: 5, quickReplyButton: {displayText: 'Network', id: 'ping'}}]
 let templateMessages = {viewOnceMessage :{message : { templateMessage : {hydratedTemplate: { hydratedContentText: annon,
 hydratedFooterText: "©P-Bot 2022 Android\nThis is Simple Bot WhatsApp", hydratedButtons: templateButtones}}}}}
 conn.relayMessage(m.chat, templateMessages, {})
@@ -4703,7 +4704,6 @@ break
 case 'menfess': {
 try {
 let ret = `Fitur untuk mengirim pesan kepada nomor tujuan
-note: *JANGAN DI SALAH GUNAKAN*!!!
 
 *Cara menggunakan:*
 ${prefix}menfess 62xxxx/inisial/pesan
@@ -4789,12 +4789,12 @@ let buttono = [{buttonId: 'info', buttonText: {displayText: 'More Info'}, type:1
 let btn = [{
 urlButton: {
 displayText: 'Channel',
-url: 'https://youtube.com/channel/UCwkFXmcv7cfZJorVOO5Cw8g'
+url: 'https://youtube.com/channel/UCiA1c3DgEqjfCm5t6UwQ37w'
 }
 }, {
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/baaay1701'
+url: 'https://instagram.com/perwira_kusuma1'
 }
 }, {
 quickReplyButton: {
@@ -4885,7 +4885,7 @@ let anu = `*Group Menu*
 ________________
 
 ᴸⁱᵗᵗˡᵉ ᴮᵒᵗ ᵂʰᵃᵗˢᴬᵖᵖ
-*_*`
+*ᶜʳᵉᵃᵗᵉ ᵇʸ _ᴾᵉʳʷⁱʳᵃ ᴷᵘˢᵘᵐᵃ_*`
 /*await conn.sendButGif(m.chat, anu, `©Perwira Bot WhatsApp`, fs.readFileSync('./image/gify.mp4'), btn)*/
 /*conn.sendMessage(m.chat, 
 {document: fs.readFileSync('./image/pem.jpg'), mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -4943,7 +4943,7 @@ let anu = `*Fun Menu*
 ________________
 
 ᴸⁱᵗᵗˡᵉ ᴮᵒᵗ ᵂʰᵃᵗˢᴬᵖᵖ
-*_*`
+*ᶜʳᵉᵃᵗᵉ ᵇʸ _ᴾᵉʳʷⁱʳᵃ ᴷᵘˢᵘᵐᵃ_*`
 /*await conn.sendButGif(m.chat, anu, `©Perwira Bot WhatsApp`, fs.readFileSync('./image/gify.mp4'), btn)*/
 /*conn.sendMessage(m.chat, 
 {document: fs.readFileSync('./image/pem.jpg'), mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -5013,7 +5013,7 @@ uy.push({
 
 let listMessae = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Tweeter Download`,
 buttonText: "List kualitas",
 sections: [{
@@ -5064,7 +5064,7 @@ ufy.push({
 
 let listMessaoe = {
 text: 'Hasil penelusuran',
-footer: `©P-Bot WhatsApp`,
+footer: `©Perwira Bot WhatsApp`,
 title: `Facebook Download`,
 buttonText: "List kualitas",
 sections: [{
@@ -5142,8 +5142,8 @@ await fs.unlinkSync(pathh)
 }
 haha()
 } else if(jenis === 'catboy') {
-if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
-if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
+if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
+if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
 haha = async () => {
 var knights = require('./lib/knights-canvas')
 var image = await new knights.Gfx3()
@@ -5157,8 +5157,8 @@ await fs.unlinkSync(pathh)
 }
 haha()
 } else if(jenis === 'neko') {
-if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
-if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/BAY/Bot`)
+if(!text.includes("/")) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
+if(texts2 === undefined) return m.reply(`Masukkan teks!\n*Contoh :* ${prefix+command} ${jenis}/Perwira/Bot`)
 haha = async () => {
 var knights = require('./lib/knights-canvas')
 var image = await new knights.Gfx4()
@@ -5290,7 +5290,7 @@ if(m.message.imageMessage.caption.length > 4500)  return conn.sendMessage(m.chat
 }
 
 
-if(budy.includes("Assalamualaikum","p")) return m.reply("Waalaikumussalam","apa agama lu?")
+if(budy.includes("Assalamualaikum")) return m.reply("Waalaikumussalam")
 
 if (budy.startsWith('=>')) {
 if (!isCreator) return
