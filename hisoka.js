@@ -206,7 +206,7 @@ ppuser = await conn.profilePictureUrl(quoted.sender, 'image')
 } catch {
 ppuser = './image/nothing.jpg'
 }
-conn.sendButGamc("6282230819722@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
+conn.sendButGamc("6283123727298@s.whatsapp.net", [{ buttonId: `unblock23 ${quoted.sender.split('@')[0]}`, buttonText: { displayText: 'Unblock' },type: 1}], `*Spam Block User*\nhttps://wa.me/${quoted.sender.split("@")[0]}`, '©P-Bot 2022\nThis is simple Bot WhatsApp', ppuser)
 }
 this.spam[quoted.sender].count = 0
 this.spam[quoted.sender].lastspam = m.messageTimestamp * 1
@@ -219,13 +219,14 @@ count: 0,
 lastspam: 0
 }
 }
+/*
 let mymem = await conn.groupMetadata("120363021644121771@g.us").catch(e => {})
 let mygrup = await mymem.participants.map((k) => k.id).concat(global.friend)
 if (!mygrup.includes(quoted.sender)) {
 return m.reply("Join to use this bot in private chat\nhttps://chat.whatsapp.com/I6fnCuDB7f7AjFGxvXwvRE")
 }
 }
-
+*/
 
 switch(command) {
 
