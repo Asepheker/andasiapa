@@ -1299,7 +1299,7 @@ if(text.length < 1) return m.reply(`Masukkan linknya\n*Contoh:* ${prefix+command
 if(text.includes("youtu")) {
 pesan = `Silahkan pilih type media`
 let btnz = [{buttonId: `ytmp3 ${text}`, buttonText: {displayText: 'Audio'}, type:1},{buttonId: `ytmp4 ${text}`, buttonText: {displayText: 'Video'}, type:1}]
-conn.sendButtonText(m.chat, btnz, pesan, `©Perwira Bot WhatsApp`, m)
+conn.sendButtonText(m.chat, btnz, pesan, `©P-Bot WhatsApp`, m)
 } else if(text.includes("instagram.com")) {
 if(text.includes("/stories/")) return m.reply(`_Gunakan perintah ${prefix}igstory_`)
 mimeaxig= ''
