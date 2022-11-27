@@ -5086,6 +5086,25 @@ m.reply(String(err))
 } break
 
 
+case 'SsWeb': case 'ssweb': case 'Ssweb': case 'ScreenshotWeb': case 'screenshotweb':{ 
+if (!text) throw `Example: *${prefix + command} https://github.com/Goblin1701*` 
+m.reply(mess.wait) 
+axios.get('https://api.pikwy.com/', { 
+params: { 
+        'tkn': '125', 
+        'd': '3000', 
+        'u': text, 
+        'fs': '0', 
+        'w': '1280', 
+        'h': '1200', 
+        's': '100', 
+        'z': '100', 
+        'f': 'jpg', 
+        'rt': 'jweb' 
+       } 
+}).then(({data}) => { return hisoka.sendMessage(m.chat, {image: {url: data.iurl}, caption: 'Screenshot web, copyright by MR_DARK'}) }) 
+} 
+break
 
 
 case 'anim':{
