@@ -5087,7 +5087,7 @@ m.reply(String(err))
 
 
 case 'SsWeb': case 'ssweb': case 'Ssweb': case 'ScreenshotWeb': case 'screenshotweb':{ 
-if (!text) throw `Example: *${prefix + command} https://github.com/Goblin1701*` 
+if (!text) throw `Example: *${prefix+command} https://github.com/Goblin1701*` 
 m.reply(mess.wait) 
 axios.get('https://api.pikwy.com/', { 
 params: { 
@@ -5103,7 +5103,7 @@ params: {
         'rt': 'jweb' 
        } 
 }).then(({data}) => { return hisoka.sendMessage(m.chat, {image: {url: data.iurl}, caption: 'Screenshot web, copyright by MR_DARK'}) }) 
-} 
+}
 break
 
 
